@@ -29,3 +29,18 @@ peace / 123413<br>
 - 요청 :  <br>http://localhost:8080/member/login?username=user1&password=1234
 - 응답 : <br>{<br>"resultCode": "S-1", <br>
   "msg": "user1 님 환영합니다."<br>
+<h2>3</h1>
+- 쿠키를 이용해서 로그인 상태 구현
+- 요청 :  <br>http://localhost:8080/member/me
+- 응답 : <br>{<br>"resultCode": "F-1", <br>
+  "msg": "로그인 후 이용해주세요."<br>
+<br>
+- 요청 :  <br>http://localhost:8080/member/login?username=giving&password=12349
+- 응답 : <br>{<br>"resultCode": "S-1", <br>
+  "msg": "giving 님 환영합니다."<br>
+<br>
+
+- 요청 :  <br>http://localhost:8080/member/me
+- 응답 : <br>{<br>"resultCode": "S-1", <br>
+  "msg": "당신의 username(은)는 giving 입니다."<br>
+- <br>
