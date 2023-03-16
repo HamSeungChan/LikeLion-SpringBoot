@@ -3,14 +3,18 @@ package com.ll.basic1.boundedContext.member.service;
 import com.ll.basic1.base.rsData.RsData;
 import com.ll.basic1.boundedContext.member.Entity.Member;
 import com.ll.basic1.boundedContext.member.Repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    public MemberService() {
-        memberRepository = new MemberRepository();
+    @Autowired
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = new MemberRepository();
     }
 
     public RsData tryLogin(String username, String password) {
