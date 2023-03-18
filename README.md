@@ -43,4 +43,3 @@ peace / 123413<br>
 - 요청 :  <br>http://localhost:8080/member/me
 - 응답 : <br>{<br>"resultCode": "S-1", <br>
   "msg": "당신의 username(은)는 giving 입니다."<br>
-- <br>
